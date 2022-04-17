@@ -130,7 +130,14 @@ nav ul li a:hover{
 }
 .home .box{
   width: 50%;
+  height: 100%;
   display: inline;
+}
+@media  (max-width:700px){
+  .box{
+    height: 30%;
+  }
+  
 }
 .home img{
   width: 80%;
@@ -177,42 +184,44 @@ nav ul li a:hover{
   color: #000;
 }
 
-.home .name p{
+.home .name h2{
       content:""; 
+      color: #000;
       overflow: hidden;
       margin: 4px 0 4px 0;
       padding:2px;
-      padding-top: 2px ;
+      padding-top: 20px ;
       padding-left: 4px ;
-      font-size: 25px;
+      font-size: 2vw;
       border-right: .10em solid #000;
       white-space: nowrap;
       animation: 
       typing 3.5s infinite steps(35, end) forwards,
       blink .8s infinite;
-      font-size: 1.6rem;
-      width: 0;
+      
 }
+
 @keyframes typing {
   from{width: 0;}
 
-  to {width: 100%;}
+  to {width: 54%;}
 
 }
 @keyframes blink {
   from { border-color: transparent }
   to { border-color:#000; }
-}
+}*/
 .home .centre{
   text-align: center;
   display: inline-block;
 }
 .home .name .myname{
-  font-weight: 100vh;
-  font-size: 7vh;
+  
+  font-size: 3vw;
   color: #000;
   overflow: hidden;
 }
+
 .home .name .button{
   background: #000;
   color: #fff;
@@ -223,10 +232,7 @@ nav ul li a:hover{
   padding:5px;
 }
 .home .name .button:hover{
-  /*background: #fff;
-  border: 2px solid black;
-  cursor: pointer;
-  color: #000;*/
+  
   box-shadow: 0 0 20px #FFE61B, 0 0 20px #FFE61a;
   border: 4px solid #FFE61B;
   background: #FFE61B;
