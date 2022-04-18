@@ -26,10 +26,14 @@ body{
 
 .container{
   width: 90%;
-  height: 90%;
-  /*box-sizing: border-box;*/
+  height: 100%;
+  
+  margin-left: 2%;
+  margin-right: 5%;
+  margin-bottom: 7%;
+  padding-top: 20px;
   overflow: hidden;
-  background-color: #FF6363;
+  
   border-radius: 15px;
   margin-bottom: 50px;
 }
@@ -104,24 +108,26 @@ nav ul li a:hover{
   text-decoration: underline;
 }
 .home{
-  margin: 1px;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  padding: 3px 4px 0 0;
-  padding-bottom: 5%;
+ 
+  width: 100%;
   height: 100%;
-  width: 90%;
+  background: #fff; 
+  border-radius: 15px;
+  margin-left: 10px;
+  padding-left: 10px;
+  align-items: center;
+  justify-content: center;
  
 }
 
 @media only screen and (max-width: 700px) {
   .home{
-    width: 80%;
+    width: 100%;
     height: 100%;  
   }
 }
 .home .box{
-  width: 50%;
+  width: 45%;
   height: 100%;
   display: inline;
 }
@@ -132,11 +138,10 @@ nav ul li a:hover{
   
 }
 .home img{
-  width: 80%;
+  width: 60%;
     height: 80%; /* vary this to your needs ie auto, 100%, etc */
-    /*margin:  0 auto;*/
     margin-top: 30%;
-    margin-left: 3px;
+    margin-left: 10px;
     border-radius: 50px;
     size: 5rem;
 }
@@ -151,7 +156,7 @@ nav ul li a:hover{
   text-decoration: underline;
 }
 .home .name{
-  width: 50%;
+  width: 45%;
   color: #ffffff;
   margin: 100px 20px;
   padding-top: 10vh;
@@ -168,28 +173,17 @@ nav ul li a:hover{
   }
   
 }
-.home .name p{
-  margin: 5px 0 5px 0;
-  padding: 2px;
-  font-size: 25px;
-  display: block;
-  color: #000;
-}
 
-.home .name h2{
+
+.home .name p{
       content:""; 
       color: #000;
       overflow: hidden;
       margin: 4px 0 4px 0;
       padding:2px;
-      padding-top: 20px ;
+      padding-top: 10px ;
       padding-left: 4px ;
-      font-size: 2vw;
-      border-right: .10em solid #000;
-      white-space: nowrap;
-      animation: 
-      typing 3.5s infinite steps(35, end) forwards,
-      blink .8s infinite;
+      font-size: 25px;
       
 }
 
@@ -209,7 +203,6 @@ nav ul li a:hover{
 }
 .home .name .myname{
   
-  font-size: 3vw;
   color: #000;
   overflow: hidden;
 }
@@ -236,9 +229,9 @@ nav ul li a:hover{
 .About-design{
   width: 90%;
   height: 90%;
-  background: #FF6363; 
+  background: #77d5cc; 
   border-radius: 15px;
-  margin-top: 5%;
+  margin-top: 7%;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 3%;
@@ -308,18 +301,12 @@ nav ul li a:hover{
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 3%;
-  border: 5px solid #FF6363;
+  border: 5px solid #77d5cc;
   border-radius: 15px;
 }
 
 .My-Skills h2{
-  /*text-align: center;
-  padding-top: 5%;
-  font-size: 30px;
-  margin: 20px 40px;
-  color: #000;
-  text-decoration: underline;
-  overflow: hidden;*/
+ 
   text-align: center;
   padding-top:5% ;
   font-size: 40px;
@@ -387,15 +374,7 @@ nav ul li a:hover{
 
 
 .what-do-i-do h2{
-  /*color: #000;
-  text-align: center;
-  justify-content: center;
-  font-size: 30px;
-  padding-right: 9%;
-  margin: 25px 28px 60px 40px;
-  color: #000;
-  text-decoration: underline;
-  overflow: hidden;*/
+  
   text-align: center;
   padding-top:5% ;
   font-size: 30px;
@@ -410,7 +389,7 @@ nav ul li a:hover{
   border-radius: 15px;
   align-items: center;
   justify-content: center;
-  background: #FF6363;
+  background: #77d5cc;
 
   
 }
@@ -419,8 +398,8 @@ nav ul li a:hover{
   display: flex;
   justify-content: center;
   color: #000;
-  font-size:35px;
-  margin: 2% 10% 2% 12%;
+  font-size:30px;
+  margin: 2% 12% 2% 12%;
   text-decoration: underline;
   overflow: hidden;
 }
@@ -439,14 +418,14 @@ nav ul li a:hover{
   padding-left: 5%;
   align-items: center;
   justify-content: center;
-  background: #FF6363;
+  background: #77d5cc;
 
  }
  .what-do-i-do .experience h4{
   text-align: center;
   justify-content: center;
   color: #000;
-  font-size:35px;
+  font-size:30px;
   margin: 2% 10% 2% 10%;
   text-decoration: underline;
 }
@@ -467,7 +446,7 @@ nav ul li a:hover{
   padding-bottom: 10px;
   align-items: center;
   justify-content: center;
-  background-color: #FF6363;
+  background-color: #77d5cc;
   
 }
 
@@ -492,40 +471,55 @@ nav ul li a:hover{
   
 }
 
-footer{
-  width: 95%;
-  height: 95%;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 0;
-  background: #FF6363;
+
+
+.body-wrapper{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+}
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
   border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
 }
-  
-footer p{
+
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
   text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
 }
-footer .social{
-  display: flex;
-  align-items: center;
-  margin-left: 40%;
-  margin-top: 20px;
+.wrapper .button:nth-child(1):hover .icon{
+  background: #4267B2;
 }
-footer .social .facebook {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+
+.wrapper .button:nth-child(2):hover .icon{
+  background: #E1306C;
 }
-footer .social .linkedin {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+
+.wrapper .button:nth-child(3):hover .icon{
+  background: #ff0000;
 }
-footer .social .envelop {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
 }
